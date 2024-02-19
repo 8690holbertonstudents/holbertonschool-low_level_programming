@@ -1,7 +1,8 @@
 #include <stdio.h>
-main() {
-/*Use the puts command*/
-char mytext = "Programming is like building a multilingual puzzle";
+/*Main function using puts*/
+int main(void)
+{
+char mytext[] = "\"Programming is like building a multilingual puzzle";
 
 puts(mytext);
 return (0);
