@@ -1,5 +1,8 @@
 #include <stdio.h>
-/*Main function using puts*/
+/**
+ * main - use puts
+ * Return: 0 no errors
+ */
 int main(void)
 {
 char mytext[] = "\"Programming is like building a multilingual puzzle";
