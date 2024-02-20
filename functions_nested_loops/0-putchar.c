@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 /**
 * main - use if and printf
 * Return: 0 no errors
