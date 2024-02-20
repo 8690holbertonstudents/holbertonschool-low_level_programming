@@ -11,8 +11,10 @@ int main(void)
 	{
 		putchar(number);
 		if (number <= '8')
+		{
 			putchar(',');
 			putchar(' ');
+		}
 		number++;
 	}
 	putchar('\n');
