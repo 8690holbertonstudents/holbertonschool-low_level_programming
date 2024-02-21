@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _print_sign - compare  0 + -
+ * print_sign - compare  0 + -
  * @n: input value from main
  * Return: return c value to main
  */
