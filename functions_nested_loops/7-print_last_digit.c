@@ -10,7 +10,7 @@ int print_last_digit(int numb)
 {
 	int numbp, lastd;
 
-	if (numb < 0)
+	if (numb < 0 && numb != INT_MIN)
 	{
 		numbp = _abs(numb);
 		lastd = numbp % 10;
