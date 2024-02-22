@@ -10,19 +10,9 @@ int print_last_digit(int numb)
 {
 	int numbp, lastd;
 
-	if (numb < 0 && numb > INT_MIN)
-	{
 		numbp = _abs(numb);
 		lastd = numbp % 10;
-	}
-	else if (numb >=0)
-	{
-		lastd = numb % 10;
-	}
-	else
-	{
-		return (0);
-	}
+
 	_putchar ('0' + lastd);
 	return (lastd);
 }
