@@ -1,5 +1,6 @@
 #include "main.h"
 #include "6-abs.c"
+#include <limits.h>
 /**
 * print_last_digit - absolute value
 * @numb: input parameter
