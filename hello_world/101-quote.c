@@ -6,6 +6,6 @@
  */
 int main(void)
 {
-	char t1[60] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	return (write(1, &t1, 60));
+	char t1[59] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	return (write(1, &t1, 59));
 }
