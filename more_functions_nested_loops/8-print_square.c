@@ -8,7 +8,7 @@
 {
 	int width, height;
 
-	for (height = 0 ; height < size ; height++)
+	for (height = 0 ; height < size && size >=0 ; height++)
 	{
 		for (width = 0 ; width < size ; width++)
 		{
