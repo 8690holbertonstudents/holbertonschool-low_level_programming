@@ -20,7 +20,7 @@ int main(void)
 				printf("Buzz ");
 		}
 		else if (((num % 3) && (num % 5)) == 0)
-			printf("FizzBuzz ");
+			printf("Fizz Buzz ");
 		else
 			printf("%d ", num);
 	}
