@@ -6,11 +6,12 @@
  */
 void print_rev(char *s)
 {
-	int mypos;
+	int mypos = 0;
 	int lasti = 0;
 
-	for (mypos = 1 ; s[mypos] != '\0'; mypos++)
+	while (s[mypos] != '\0')
 	{
+		mypos++;
 		lasti++;
 	}
 	while (lasti >= 0)
