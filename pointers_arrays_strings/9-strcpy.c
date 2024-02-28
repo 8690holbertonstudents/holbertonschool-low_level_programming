@@ -7,9 +7,10 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	int idx;
+	int ids, idd;
 
-	for (idx = 0 ; src[idx] >= '\0' ; idx++)
-		dest[idx] = src[idx];
+	for (ids = 0 ; src[ids] != '\0' ; ids++)
+	for (idd = 0 ; idd <= ids ; idd++)
+		dest[idd] = src[idd];
 	return (dest);
 }
