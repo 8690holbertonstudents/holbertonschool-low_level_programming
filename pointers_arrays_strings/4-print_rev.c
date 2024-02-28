@@ -7,18 +7,16 @@
 void print_rev(char *s)
 {
 	int mypos = 0;
-	int lasti = 0;
 
 	while (s[mypos] != '\0')
 	{
 		mypos++;
-		lasti++;
 	}
-	lasti--;
-	while (lasti >= 0)
+	mypos--;
+	while (mypos >= 0)
 	{
-		_putchar (s[lasti]);
-		lasti--;
+		_putchar (s[mypos]);
+		mypos--;
 	}
 	_putchar ('\n');
 }
