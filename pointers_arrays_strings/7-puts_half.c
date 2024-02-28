@@ -15,7 +15,7 @@ void puts_half(char *str)
 	}
 	if ((i_pos % 2) != 0)
 	{
-		j_pos = ((i_pos -1) / 2);
+		j_pos = ((i_pos - 1) / 2);
 	}
 	else
 	{
