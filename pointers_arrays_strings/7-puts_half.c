@@ -13,7 +13,14 @@ void puts_half(char *str)
 	{
 		i_pos++;
 	}
-	j_pos = (i_pos / 2);
+	if ((i_pos % 2) != 0)
+	{
+		j_pos = ((i_pos -1) / 2);
+	}
+	else
+	{
+		j_pos = (i_pos / 2);
+	}
 	while ((j_pos) <= i_pos - 1)
 	{
 		_putchar (str[j_pos]);
