@@ -1,5 +1,4 @@
 #include "main.h"
-#include "_putchar.c"
 /**
  * _atoi - use pointer
  * @s: input pointer from main
