@@ -1,5 +1,4 @@
 #include "main.h"
-#include "_putchar.c"
 /**
  * *string_toupper - compare 2 string
  * @char: input from main
