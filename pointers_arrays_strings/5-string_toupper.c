@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * *string_toupper - compare 2 string
- * @char: input from main
- * Return: Contact pointers
+ * @s1: input pointer
+ * Return: Change in pointer
  */
 char *string_toupper(char *s1)
 {
@@ -11,7 +11,7 @@ char *string_toupper(char *s1)
 	while (s1[i] != '\0')
 	{
 		if (s1[i] >= 'a' && s1[i] <= 'z')
-			s1[i] = s1[i] -32;
+			s1[i] = s1[i] - 32;
 
 		i++;
 	}
