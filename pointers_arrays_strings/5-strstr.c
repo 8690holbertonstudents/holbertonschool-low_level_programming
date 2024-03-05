@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strstr - locates a substring
  * @haystack: input char pointer from main
@@ -7,13 +8,11 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-
-
 	while (*haystack != '\0')
 	{
 		if (*haystack == *needle)
 			return (haystack);
 		haystack++;
 	}
-	return (0);
+	return (NULL);
 }
