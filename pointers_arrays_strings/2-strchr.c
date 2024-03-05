@@ -13,5 +13,8 @@ char *_strchr(char *s, char c)
 			break;
 		s++;
 	}
-	return (s);
+	if (*s == '\0')
+		return (0);
+	else
+		return (s);
 }
