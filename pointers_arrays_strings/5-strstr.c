@@ -12,7 +12,10 @@ char *_strstr(char *haystack, char *needle)
 		if (*haystack == *needle)
 			return (haystack);
 		else if (*haystack == '\0')
+		{
+			*haystack = '\0';
 			break;
+		}
 		haystack++;
 	}
 	return (0);
