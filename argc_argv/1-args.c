@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 	argv[0] = "";
 
 	if (argc == 1)
-		printf("\n");
+		printf("0\n");
 	else
 		printf("%d\n", argc - 1);
 	return (0);
