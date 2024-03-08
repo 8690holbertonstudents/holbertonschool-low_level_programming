@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
 		if (argc == 2)
 		{
 		int num = atoi(argv[1]);
+
 		while (num > 0)
 		{
 			result = num / 25;
