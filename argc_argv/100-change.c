@@ -10,7 +10,7 @@
 int main(int argc, char *argv[])
 {
 	int num = atoi(argv[1]);
-	int piece, result = 0;
+	int result = 0;
 
 	if (!(argc == 2))
 	{
@@ -21,20 +21,19 @@ int main(int argc, char *argv[])
 		printf("0\n");
 	else
 	{
-		while (num >= 0)
+		while (num > 0)
 		{
-		if (num > 25)
-			piece = 25;
-		else if (num > 10)
-			piece = 10;
-		else if (num > 5)
-			piece = 5;
-		else if (num > 2)
-			piece = 2;
-		else
-			piece = 1;
-		result = result + (num / piece);
-		num = num - (result * piece);
+		if (num >= 25)
+			num -= 25;
+		else if (num >= 10)
+			num -= 10;
+		else if (num >= 5)
+			num -= 5;
+		else if (num >= 2)
+			num -= 2;
+		else if (num >= 1)
+			num -= 1;
+		result++;
 		}
 		printf("%d\n", result);
 	}
