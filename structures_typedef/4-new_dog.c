@@ -3,9 +3,9 @@
 #include <stdio.h>
 /**
  * new_dog - function that creates a new dog
- * @name: name element of structure dog
- * @age: age element of structure dog
- * @owner: owner element of structure dog
+ * @name: name element
+ * @age: float age element
+ * @owner: owner element
  * Return: Pointer to main
  */
 dog_t *new_dog(char *name, float age, char *owner)
@@ -15,14 +15,20 @@ dog_t *new_dog(char *name, float age, char *owner)
 	p_dog = malloc(sizeof(struct dog));
 	if (!(p_dog == NULL))
 	{
-		p_dog->name = name;
+		if (name != NULL)
+			p_dog->name = name;
+		else
+			free(name);
+
+		if (owner != NULL)
+			p_dog->owner = owner;
+		else
+			free(owner);
+
 		p_dog->age = age;
-		p_dog->owner = owner;
 	}
 	else
 	{
-		free(name);
-		free(owner);
 		free(p_dog);
 		return (NULL);
 	}
