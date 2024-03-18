@@ -2,7 +2,7 @@
 /**
  * array_iterator - function that executes a function given
  * as a parameter on each element of an array
- * @array: input char pointer from main
+ * @array: input int pointer from main
  * @size: input size of array from main
  * @action: input pointer to function from main
  * Return: Nothing
