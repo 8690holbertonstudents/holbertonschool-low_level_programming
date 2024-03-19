@@ -10,10 +10,10 @@ int main(int argc, char *argv[])
 	int result, a, b;
 	char *ptr_op;
 
-	if (argc != 4)
+	if (argc != 4 || argv[2][1] != '\0')
 	{
 		printf("Error\n");
-		return (1);
+		return (98);
 	}
 
 	a = atoi(argv[1]);
