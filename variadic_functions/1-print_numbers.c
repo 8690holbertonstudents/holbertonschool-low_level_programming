@@ -1,9 +1,9 @@
 #include "variadic_functions.h"
 /**
- * print_numbers - function that returns
- * the sum of all its parameters
- * @separator: numbers to sum together
- * @n: numbers to sum together
+ * print_numbers - function that print numbers
+ * with a given separator
+ * @separator: string separator between numbers
+ * @n: numbers to print
  * Return: Nothing
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
