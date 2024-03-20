@@ -10,10 +10,15 @@ int main(int argc, char *argv[])
 	int result, a, b;
 	char *ptr_op;
 
-	if (argc != 4 || argv[2][1] != '\0')
+	if (argc != 4)
 	{
 		printf("Error\n");
 		return (98);
+	}
+	else if (argv[2][1] != '\0')
+		{
+		printf("Error\n");
+		return (99);
 	}
 
 	a = atoi(argv[1]);
