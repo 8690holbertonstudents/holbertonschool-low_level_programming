@@ -12,7 +12,10 @@ void print_all(const char * const format, ...)
 	va_list args;
 
 	if (format == NULL)
-		exit(0);
+	{
+		/*printf("\n");*/
+		exit(1);
+	}
 
 	va_start(args, format);
 
