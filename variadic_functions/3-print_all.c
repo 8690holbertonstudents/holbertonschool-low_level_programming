@@ -1,8 +1,7 @@
 #include "variadic_functions.h"
 /**
  * print_all - print anything
- * with a given separato
- * @n: number of string to print
+ * @format: string to iterate
  * Return: Nothing
  */
 void print_all(const char * const format, ...)
@@ -13,12 +12,10 @@ void print_all(const char * const format, ...)
 
 	if (format == NULL)
 	{
-		/*printf("\n");*/
-		exit(1);
+		printf("\n");
+		exit(0);
 	}
-
 	va_start(args, format);
-
 	while (format[i] != '\0')
 	{
 		switch (format[i])
