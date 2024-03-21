@@ -7,7 +7,7 @@
  */
 void print_all(const char * const format, ...)
 {
-	int i = 0;
+	int i = 0, state = 0;
 	char *string;
 	va_list args;
 
@@ -19,24 +19,29 @@ void print_all(const char * const format, ...)
 		{
 		case 'c':
 			printf("%c", va_arg(args, int));
+			state = 1;
 			break;
 		case 'i':
 			printf("%d", va_arg(args, int));
+			state = 1;
 			break;
 		case 'f':
 			printf("%f", va_arg(args, double));
+			state = 1;
 			break;
 		case 's':
 			string = va_arg(args, char *);
 			if (string == NULL)
 				printf("(nil)");
 			printf("%s", string);
+			state = 1;
 			break;
 		default:
+			state = 0;
 			break;
 		}
 		i++;
-		if (!(format[i] == '\0'))
+		if (state == 1 && format[i] != '\0')
 			printf(", ");
 	}
 	printf("\n");
