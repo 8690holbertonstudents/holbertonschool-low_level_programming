@@ -18,7 +18,7 @@ void print_all(const char * const format, ...)
 
 	while (format[i] != '\0')
 	{
-		select_case(format[i], args, state);
+		state = select_case(format[i], args, state);
 		i++;
 		if (state == 1 && format[i] != '\0')
 			printf(", ");
