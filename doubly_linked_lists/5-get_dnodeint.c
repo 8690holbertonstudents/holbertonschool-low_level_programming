@@ -17,10 +17,10 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 
 	while (curnode->next != NULL)
 	{
-		curnode = curnode->next;
-		i++;
 		if (i == index)
 			return (curnode);
+		curnode = curnode->next;
+		i++;
 	}
 	return (NULL);
 }
