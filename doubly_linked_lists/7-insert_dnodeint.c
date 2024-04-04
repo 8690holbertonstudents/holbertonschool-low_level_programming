@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * *insert_dnodeint_at_index - inserts a new node at a given position
+ * insert_dnodeint_at_index - inserts a new node at a given position
  * @h: input double pointer
  * @idx: index value where to add the new node
  * @n: value to add to the dlistint_t structure
@@ -17,7 +17,6 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		return (NULL);
 
 	newnode->n = n;
-	/*newnode->next = NULL;*/
 
 	if (*h == NULL)
 	{
@@ -37,11 +36,11 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		i++;
 	}
 
-	if (curnode->next != NULL)
-		curnode->next->prev = newnode;
-	newnode->prev = curnode;
 	newnode->next = curnode->next;
 	curnode->next = newnode;
+	newnode->prev = curnode;
+	if (newnode->next != NULL)
+		newnode->next->prev = newnode;
 
 	return (curnode);
 }
