@@ -28,11 +28,11 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	curnode = *h;
 
-	if (curnode == NULL)
-		return (NULL);
 
 	while (i < idx)
 	{
+		if (curnode == NULL)
+			return (NULL);
 		curnode = curnode->next;
 		i++;
 	}
