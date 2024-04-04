@@ -37,9 +37,10 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		i++;
 	}
 
-	curnode->next = newnode;
-	newnode->prev = curnode;
 	curnode->next->prev = newnode;
+	newnode->prev = curnode;
+	newnode->next = curnode->next;
+	curnode->next = newnode;
 
 	return (curnode);
 }
