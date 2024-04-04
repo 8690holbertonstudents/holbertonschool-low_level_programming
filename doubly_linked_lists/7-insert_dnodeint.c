@@ -2,7 +2,7 @@
 /**
  * *insert_dnodeint_at_index - inserts a new node at a given position
  * @h: input double pointer
- * @index: index value where to add the new node
+ * @idx: index value where to add the new node
  * @n: value to add to the dlistint_t structure
  * Return: the address of the new element, or NULL if it failed
  */
@@ -27,6 +27,9 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	}
 
 	curnode = *h;
+
+	if (curnode == NULL)
+		return (NULL);
 
 	while (i < idx)
 	{
