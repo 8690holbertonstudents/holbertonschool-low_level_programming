@@ -18,7 +18,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	n = read(fd, buffer, letters);
-	b_write = write(1, buffer,letters);
+
+	if (n < 0)
+		return (0);
+
+	b_write = write(1, buffer, letters);
+	b_write = write(2, buffer, letters);
 
 	if (b_write == -1)
 		return (0);
